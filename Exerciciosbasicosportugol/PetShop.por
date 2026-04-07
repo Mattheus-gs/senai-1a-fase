@@ -3,7 +3,9 @@ programa
 	
 	funcao inicio()
 	{
-		real Racao, RacaoKg, Valor
+		real Racao, RacaoKg, ValorT 
+		inteiro ValorKg
+		ValorKg = 10
 		
 
 		escreva("quantos gramas de ração voce quer comprar? ")
@@ -11,9 +13,9 @@ programa
 
 		RacaoKg = Racao/1000
 
-		Valor= RacaoKg*10
+		ValorT= RacaoKg*ValorKg
 
-		escreva("O seu pedido deu R$ " + Valor)
+		escreva("O seu pedido deu R$ " + ValorT)
 
 		
 		
@@ -24,7 +26,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 225; 
+ * @POSICAO-CURSOR = 279; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
