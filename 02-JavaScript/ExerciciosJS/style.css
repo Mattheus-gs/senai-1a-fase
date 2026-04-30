@@ -1,0 +1,55 @@
+button{ 
+   
+     padding: 7px; 
+     background-color: rgb(184, 183, 184);
+     font-size: 20px; 
+     font-family: 'Times New Roman', Times, serif;
+     border-radius: 15px;
+     border: 3px ridge rgb(255, 0, 0);
+     cursor: pointer;
+     transition: 0.3s;
+}
+button:hover{
+background-color: rgb(94, 34, 150);
+
+}
+
+body{
+    background-color: rgb(47, 51, 50);
+}
+
+
+h1{
+    background-color: rgb(70, 24, 88);
+     text-align: center;
+     font-size: 50px;
+     border-radius: 12px;
+     border: 3px ridge rgb(255, 0, 0);
+
+}
+h2{
+    background-color: rgb(75, 25, 121); 
+    text-align: center;
+    border-radius: 12px;
+     border: 3px ridge rgb(255, 0, 0);
+    font-size: 27px;
+
+   
+}
+
+
+output{
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(102, 0, 0);
+    border-radius: 12px;
+    padding: 5px;
+    margin: 1px;
+    text-align: center;
+
+}
+
+hr{
+   background-color: rgb(85, 10, 156);
+    height: 2px;
+}
