@@ -9,6 +9,8 @@ Lucro = Custo * 2
 
 Total = Lucro + Custo
 
+document.body.className = "azul"
+
 
 // tela - chamar o id - nome do id - apenas texto interno - oque aparecera quando for finalizado
 document.getElementById("resultado").innerHTML = "Voce devera vender este produto por R$ "+Total.toFixed(2)+" para ter 200% de lucro"
@@ -88,5 +90,77 @@ ValorT = (PrecoPar*Qpares)
 console.log("Voce recebera um valor de R$ "+ ValorT.toFixed(2)+ " pelos seus pares")
 
 document.getElementById("resultado").innerHTML = "Voce recebera um valor de R$ "+ ValorT.toFixed(2)+ " pelos seus pares"
+document.getElementById("resultado").className = "roxo"
+document.body.className = "verde"
+
+}
+
+//Ser maior de idade
+
+function MaiorDeIdade(){
+     
+let idade,resultado = document.getElementById("resultado")
+
+idade = Number(prompt("Qual a sua idade? "))
+
+if ( idade >= 18 ){
+    resultado.innerHTML = "Voce é maior de idade e pode ser preso"
+ } else 
+    resultado.innerHTML = "Voce não é maior de idade e sera liberado"
+
+
+}
+
+//Adivinhe o numero
+function Advinhação(){
+    const numeroSecreto = Math.ceil(Math.random() * 10);
+
+// Pede um palpite ao usuário
+let palpite = Number(prompt("Adivinhe o número entre 1 e 10:")),
+resultado = document.getElementById("resultado");
+
+
+
+// Verifica o resultado
+if (palpite === numeroSecreto) {
+resultado.innerHTML = (`🎉 Parabéns! Você acertou! o numero era 25`);
+} else {
+    resultado.innerHTML = (`❌ Errou! O número era ${numeroSecreto}`);
+    }
+
+
+
+}
+//Verifica se o numero é par ou impar
+function VerificarPar(){
+let numero = Number(prompt("escolha um numero qualquer: "))
+resultado = document.getElementById("resultado");
+
+if (numero % 2 === 0 )
+    resultado.innerHTML = "Seu numero é par"
+else{
+    resultado.innerHTML = "Seu numero é impar"
+}
+}
+function ClassificarNota(){
+let nota = Number(prompt("Qual sua nota de 0 a 100? "))
+resultado = document.getElementById("resultado");
+
+if (nota <= 20){
+     resultado.innerHTML = "Sua nota é E, seu animal"
+
+    }else if(nota <= 40){
+        resultado.innerHTML = "Sua nota é D, Precisa estudar"
+    } else if(nota <= 60){
+            resultado.innerHTML = "Sua nota é C, Ta mais ou menos"
+    } else if (nota <= 80){
+        resultado.innerHTML = "Sua nota é B, Parabens"
+    }
+    else {
+        resultado.innerHTML = "Sua nota é A, Precisa de vida social"
+    }
+
+
+
 
 }

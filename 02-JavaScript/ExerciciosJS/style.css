@@ -1,37 +1,37 @@
 button{ 
    
      padding: 7px; 
-     background-color: rgb(184, 183, 184);
+     background-color: rgb(71, 101, 184);
      font-size: 20px; 
      font-family: 'Times New Roman', Times, serif;
      border-radius: 15px;
-     border: 3px ridge rgb(255, 0, 0);
+     border: 3px ridge rgb(20, 61, 116);
      cursor: pointer;
      transition: 0.3s;
 }
 button:hover{
-background-color: rgb(94, 34, 150);
+background-color: rgb(103, 46, 126);
 
 }
 
 body{
-    background-color: rgb(47, 51, 50);
+    background-color: rgb(7, 1, 31);
 }
 
 
 h1{
-    background-color: rgb(70, 24, 88);
+    background-color: rgb(103, 46, 126);
      text-align: center;
      font-size: 50px;
      border-radius: 12px;
-     border: 3px ridge rgb(255, 0, 0);
+     border: 3px ridge rgb(68, 14, 82);
 
 }
 h2{
-    background-color: rgb(75, 25, 121); 
+    background-color: rgb(103, 46, 126); 
     text-align: center;
     border-radius: 12px;
-     border: 3px ridge rgb(255, 0, 0);
+     border: 3px ridge rgb(68, 14, 82);
     font-size: 27px;
 
    
@@ -40,16 +40,34 @@ h2{
 
 output{
     font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(102, 0, 0);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(71, 101, 184);
     border-radius: 12px;
     padding: 5px;
-    margin: 1px;
+    margin: 5px;
     text-align: center;
-
+    color: rgb(0, 0, 0);
+    border: 3px ridge rgb(20, 61, 116);
 }
 
 hr{
-   background-color: rgb(85, 10, 156);
+   background-color: rgb(68, 14, 82);
     height: 2px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.roxo{
+    background-color: blueviolet;
+
+}
+
+.verde{
+
+    background-color: rgb(31, 61, 31);
+}
+
+.azul{
+
+    background-color: aqua;
 }
