@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- CONTAGEM -->
     <h1>variaveis</h1>
     <HR></HR>
     <button onclick="DiminuirContagem()">-</button>
@@ -16,20 +18,65 @@
     <button onclick="ZerarContagem()">Zerar</button>
     <hr></hr>
 
-
-   Valor total de venda R$
+    <!-- REGISTRAR VENDA -->
+   Valor da venda R$
     <input id="ValorV" type="text"> 
     <button onclick="registrarVenda()">Adicionar venda</button>
+    <button onclick="TirarVenda()">Apagar ultima venda</button>
     <p>Valor total da sua venda abaixo</p>
     <p id="valorT">Total de vendas: R$ </p>
+
+
+
+
     <hr></hr> 
+
+    <!-- GIRAR DADOS -->
+
+
     <div id="Lista"></div>
-    <hr> </hr>
     <button onclick="GirarDados()">Clique para girar o D4, D6, D10 e D12</button>
+    <button onclick="GirarD4()">Clique para girar o D4</button>
+    <button onclick="GirarD6()">Clique para girar o D6</button>
+    <button onclick="GirarD10()">Clique para girar o D10</button>
+    <button onclick="GirarD12()">Clique para girar o D12</button>
+    <p id="GiroD4">O D4 foi rodado: </p>
+    <p id="GiroD6">O D6 foi rodado: </p>
+    <p id="GiroD10">O D10 foi rodado: </p>
+    <p id="GiroD12">O D12 foi rodado: </p>
     <p id="pontos"></p>
     <div id="listadados"></div>
     
     <p id="RodadasAnt"></p>
+
+
+    <HR></HR>
+
+
+    <!--DINO-->
+
+
+     Valor da aposta R$
+    <input id="ValorAposta" type="text"> 
+    <button onclick="Apostar()">Apostar</button>
+    <br>
+    <br>
+    <button onclick="Espino()">Espinossauro</button>
+    <button onclick="Trex()">T-rex</button>
+    <button onclick="Broquio()">Bronquiossauro</button>
+    <button onclick="Veloc()">Velociraptor</button>
+    <button onclick="Estego()">Estegossauro</button>
+    <button onclick="Trice()">Triceratopo</button>
+    <button onclick="Anquilo()">Anquilossauro</button>
+    <button onclick="Parassau()">Parassaurolofo</button>
+    <button onclick="Alos()">Alossauro</button>
+    <button onclick="Carno()">Carnotauro</button>
+    <BR>
+    <p>RESULTADO</p>
+    <p id="SeuDino">Seu dino: </p>
+    <p id="DinoS">Dino sorteado: </p>
+
+
 
 
 
