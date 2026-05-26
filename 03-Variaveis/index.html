@@ -18,6 +18,8 @@
     <button onclick="ZerarContagem()">Zerar</button>
     <hr></hr>
 
+
+    <div id="testevenda">
     <!-- REGISTRAR VENDA -->
    Valor da venda R$
     <input id="ValorV" type="text"> 
@@ -27,13 +29,13 @@
     <p id="valorT">Total de vendas: R$ </p>
 
 
-
+</div>
 
     <hr></hr> 
 
     <!-- GIRAR DADOS -->
 
-
+    <div id="dados">
     <div id="Lista"></div>
     <button onclick="GirarDados()">Clique para girar o D4, D6, D10 e D12</button>
     <button onclick="GirarD4()">Clique para girar o D4</button>
@@ -49,35 +51,40 @@
     
     <p id="RodadasAnt"></p>
 
-
+    </div>
     <HR></HR>
 
-
+    <div id="jogodino">
     <!--DINO-->
-
+    JOGO DO DINO <button onclick="digitarSenha">Raw</button> <br><br>
 
      Valor da aposta R$
     <input id="ValorAposta" type="text"> 
     <button onclick="Apostar()">Apostar</button>
     <br>
     <br>
-    <button onclick="Espino()">Espinossauro</button>
-    <button onclick="Trex()">T-rex</button>
-    <button onclick="Broquio()">Bronquiossauro</button>
-    <button onclick="Veloc()">Velociraptor</button>
-    <button onclick="Estego()">Estegossauro</button>
-    <button onclick="Trice()">Triceratopo</button>
-    <button onclick="Anquilo()">Anquilossauro</button>
-    <button onclick="Parassau()">Parassaurolofo</button>
-    <button onclick="Alos()">Alossauro</button>
-    <button onclick="Carno()">Carnotauro</button>
+    <button onclick="DinoE(1)">Espinossauro</button>
+    <button onclick="DinoE(2)">T-rex</button>
+    <button onclick="DinoE(3)">Bronquiossauro</button>
+    <button onclick="DinoE(4)">Velociraptor</button>
+    <button onclick="DinoE(5)">Estegossauro</button>
+    <button onclick="DinoE(6)">Triceratopo</button>
+    <button onclick="DinoE(7)">Anquilossauro</button>
+    <button onclick="DinoE(8)">Parassaurolofo</button>
+    <button onclick="DinoE(9)">Alossauro</button>
+    <button onclick="DinoE(10)">Carnotauro</button>
+    <button onclick="DinoE(11)">Aleatorio</button><br> 
+    <p id="50xtexto"></p>
+    <div id="50x"></div>
+    
+  
     <BR>
     <p>RESULTADO</p>
     <p id="SeuDino">Seu dino: </p>
     <p id="DinoS">Dino sorteado: </p>
     <p id="ValorRec">Valor a receber: R$</p>
 
-
+        </div>
 
 
 

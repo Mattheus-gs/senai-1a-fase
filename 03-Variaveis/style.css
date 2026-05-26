@@ -1,1 +1,21 @@
 h1{text-align: center;}
+
+#dados{
+background-color: rgb(92, 121, 141);
+}
+#jogodino{
+    background-color: rgb(111, 129, 83);
+}
+#testevenda{
+    background-color: rgb(230, 181, 92);
+}
+
+button{
+   padding: 3px solid black;
+}
+
+hr{
+    background-color: rgb(0, 0, 0);
+    padding: 5px;
+    margin: 0px;
+}
