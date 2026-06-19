@@ -124,11 +124,11 @@ function exercicios(){
 //     fatorialt += fatorial;
 
 //     numero--
-//     console.log(fatorial)
+//     document.getElementById("resultado").innerHTML += fatorial + "<br>"
     
 
 // }
-// console.log("fatorial total é " + fatorialt)
+// document.getElementById("resultado2").innerHTML = ("fatorial total é " + fatorial)
 
 //===========================================================================
 
@@ -151,5 +151,80 @@ function exercicios(){
 //         document.getElementById("resultado").innerHTML += i +"<br>" 
 //     }  
 // }
+//=========================================================================================
+// let valor = 1
+// let resultado = 0
+// let divisor = 1
+// let i = 0
+// while(i<10){
+   
+//     resultado += valor / divisor
+//     divisor ++
+//     document.getElementById("resultado").innerHTML += resultado.toFixed(3) + "<br>"
+//     console.log(valor)
+//     console.log(resultado)
+//     console.log(divisor)
+//     i++
+// }
+// document.getElementById("resultado2").innerHTML = ("resultado final é: " + resultado.toFixed(3))
+//======================================================================================================================================
+// let numero = Number(prompt("Escolha um numero aleatorio: "))
+// let numerosP = 0
+// let numerosI = 0
+// let cont =0
+// let contagem = 0
+// while(cont<numero){
+    
+//     contagem++
+//     let resultado = contagem % 2
+//     if(resultado == 0){
+//         numerosP++
+//     }else{
+//         numerosI++
+//     }
+//     cont++
 
+
+// }
+
+// document.getElementById("resultado2").innerHTML = ("IMPARES: " + numerosI +"<br>" + "PARES" + numerosP)
+
+//========================================================================================
+// let numero = Number(prompt("escreva o numero que voce quer saber se é primo: "))
+// let cont = 0
+// let resultado = 0
+// let primos = 0
+// while(cont<numero){
+//     cont++
+//     resultado = numero % cont
+//     if(resultado == 0){
+//         console.log("divisões inteiras")
+//         primos++
+//     }else{
+//         console.log("divisões quebradas")
+//     }
+// }
+// if(primos >1 && primos <=2){
+//     document.getElementById("resultado2").innerHTML = "numero é primo"
+
+//     }
+//     else{
+//         document.getElementById("resultado2").innerHTML = "numero NÃO é primo"
+//     }
+
+//==========================================================================================
+let numero = Number(prompt("escreva o numero que voce quer saber se é primo: "))
+let cont = 0
+let resultado = 0
+let primos = 0
+while(cont<numero){
+    cont++
+    resultado = numero % cont
+    if(resultado == 0){
+        console.log("divisões inteiras")
+        primos++
+    }else{
+        console.log("divisões quebradas")
+    }
+}
 }
