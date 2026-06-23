@@ -213,18 +213,101 @@ function exercicios(){
 //     }
 
 //==========================================================================================
-let numero = Number(prompt("escreva o numero que voce quer saber se é primo: "))
-let cont = 0
-let resultado = 0
-let primos = 0
-while(cont<numero){
-    cont++
-    resultado = numero % cont
-    if(resultado == 0){
-        console.log("divisões inteiras")
-        primos++
-    }else{
-        console.log("divisões quebradas")
-    }
 }
+
+function exerciciosf(){
+//  for(let i = 1; i<=11;i++){
+//     if(i==1){
+//         document.getElementById("resultado2").innerHTML += "J<br>"
+//     } else if(i==2){
+//         document.getElementById("resultado2").innerHTML += "a<br>"
+//     }
+//     else if(i==3){
+//         document.getElementById("resultado2").innerHTML += "v<br>"
+//     }
+//     else if(i==4){
+//         document.getElementById("resultado2").innerHTML += "a<br>"
+//     }
+//     else if(i==5){
+//         document.getElementById("resultado2").innerHTML += "S<br>"
+//     }
+//     else if(i==6){
+//         document.getElementById("resultado2").innerHTML += "c<br>"
+//     }
+//     else if(i==7){
+//         document.getElementById("resultado2").innerHTML += "r<br>"
+//     }
+//     else if(i==8){
+//         document.getElementById("resultado2").innerHTML += "i<br>"
+//     }
+//     else if(i==9){
+//         document.getElementById("resultado2").innerHTML += "p<br>"
+//     }
+//     else if(i==10){
+//         document.getElementById("resultado2").innerHTML += "t<br>"
+//     }
+
+//     console.log(i)
+
+    
+//  }
+//==============================================================================
+// let valor = 1
+// let resultado = 0
+// for(i=0;i<10;i++){
+//     resultado = valor * 3
+//     document.getElementById("resultado2").innerHTML += "resultado: "+resultado+"<br>"
+//  valor++
+// }
+//==============================================================================
+// for(i=0;i<10;i++){
+//    document.getElementById("resultado2").innerHTML += "*"
+// }
+//==============================================================================
+// let n = 0
+// let resultado = 0
+// for(i=2;i<20;i+=2){
+//     n = n +i
+//     document.getElementById("resultado2").innerHTML += n+"<br>"
+// }
+//==============================================================================
+// for(i=1;i<=8;i++){
+//     document.getElementById("resultado2").innerHTML += i+" ola <br>"
+// }
+//==============================================================================
+// let n = 0
+// for(i=1;i<=15;i+=2){
+//     n = n +i
+//     document.getElementById("resultado2").innerHTML += n+"<br>"
+// }
+//==============================================================================
+// for(i=1;i<=1;i++){
+//     document.getElementById("resultado2").innerHTML += "1"+"<br>"
+//     document.getElementById("resultado2").innerHTML +="12"+"<br>"
+//     document.getElementById("resultado2").innerHTML += "123"+"<br>"
+//     document.getElementById("resultado2").innerHTML += "1234"+"<br>"
+//     document.getElementById("resultado2").innerHTML += "12345"+"<br>"
+// }
+//==============================================================================
+
+// let fatorial=1
+
+// for(i=5;i>1;i--){
+//     fatorial *= i
+//      document.getElementById("resultado2").innerHTML += fatorial+"<br>"
+    
+// }
+
+//==============================================================================
+// let palavra = prompt("digite uma palavra: ")
+// let os = 0
+
+// for(i=0;i<palavra.length;i++){
+//     if(palavra[i] == "o"){
+//         os += 1
+//     }
+// }
+// document.getElementById("resultado2").innerHTML = "tem exatamente "+os+" letra(s) O"
+//============================================================================
+
 }
