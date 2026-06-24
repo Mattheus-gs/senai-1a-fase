@@ -307,7 +307,77 @@ function exerciciosf(){
 //         os += 1
 //     }
 // }
-// document.getElementById("resultado2").innerHTML = "tem exatamente "+os+" letra(s) O"
+// document.getElementById("resultado2").innerHTML = "tem exatamente "+os+" letra(s) O na palavra: "+palavra
 //============================================================================
+}
+function lista1(){
+let dias = Number(prompt("quantos dias tem a sprint? "))
+let tarefas = 0
+let tarefaT = 0
+let tarefasC = 0 
+let tarefasI = 0
+let iT = 0
+let cT = 0
+    for(i=1;i<=dias;i++){
+        tarefas = Number(prompt("quantas tarefas foram iniciadas no dia "+i+": "))
+        tarefasC = Number(prompt("quantas tarefas foram CONCLUIDAS no dia "+i+": "))
+        tarefasI = Number(prompt("quantas tarefas FICARAM INCOMPLETAS no dia "+i+": "))
 
+        tarefaT += tarefas
+        iT += tarefasI
+        cT += tarefasC
+    document.getElementById("resultado2").innerHTML += "No dia "+i+" foram iniciadas: "+tarefas + " tarefas<br>"+
+                            "Tarefas concluidas no dia "+i+": "+ tarefasC+"<br>"+
+                            "Tarefas incompletas no dia "+i+": "+ tarefasI+"<br>"
+    }
+document.getElementById("resultado2").innerHTML += "no total foram iniciadas :" + tarefaT +" tarefas<br>"+
+                            "Tarefas concluidas totais: "+ cT+"<br>"+
+                            "Tarefas incompletas totais: "+ iT
+}
+function lista2(){
+let dias = Number(prompt("quantos dias tem a sprint? "))
+let bugsT = 0
+let diama = 0
+let diame = 0
+let Mbug = 0
+let Mebug = 0
+let bug10 = 0
+let bug0 = 0
+
+    for(i=1;i<=dias;i++){
+       let bugs = Number(prompt("quantos bugs encontrados no dia "+i+": "))
+        
+
+        bugsT += bugs
+        
+        document.getElementById("resultado2").innerHTML += "No dia "+i+" foram encontrados: "+bugs + " bugs<br>"
+            
+         if(i==1){
+            diama = i
+            Mbug = bugs
+            diame = i
+            Mebug = bugs
+         }else if (bugs>Mbug){
+            Mbug = bugs
+            diama = i
+         }else if(bugs<Mebug){
+            Mebug = bugs
+            diame = i
+         }
+
+         if(bugs> 10){
+            bug10++
+         }
+         if(bugs==0){
+            bug0++
+         }
+    }
+let mediabug = bugsT/dias
+document.getElementById("resultado2").innerHTML += "no total foram encontrados :" + bugsT +" bugs<br>"+
+                                                    "Media de bugs: "+ mediabug.toFixed(0)+"<br>"+
+                                                    "dia com mais bugs: "+diama+" dias - BUGS: "+Mbug+"<br>" +
+                                                    "dia com menos bugs: "+diame+" dias - BUGS: "+Mebug+"<br>"+
+                                                    "dia com mais de 10 bugs: "+bug10+" dia(s)<br>"+
+                                                    "dia sem bugs: "+bug0+" dia(s)<br>"
+                            
 }
