@@ -36,14 +36,14 @@ let produtos2 = ["Meia", "Pá de corte", "Suco de manga", "Leite"]
 let precos2 = [665.9999, 777, 12, 4]
 
 function verProdutosComPrecos(){
+    document.getElementById('resultado2').innerHTML = ''
     // console.log(produtos);
-    for(let i=0; i<produtos.length; i++){
+    for(let i=0; i<produtos2.length; i++){
         let j = i + 1
-        document.getElementById('listaProdutos').innerHTML += 
+        document.getElementById('resultado2').innerHTML += 
         "<p>" + 
-        j + "°: " + produtos[i] + " R$ " + 
-        precos[i].toFixed(2).replace('.', ',') 
-        + 
+        j + "°: " + produtos2[i] + " R$ " + 
+        precos2[i].toFixed(2).replace('.', ',') + 
         "</p>"
     } 
 }
@@ -55,6 +55,21 @@ function retirarUltN(){
 
 function aumentapreco(){
     for(let i=0; i<precos2.length; i++){
-        precos2[i] * 3
+        precos2[i] *= 4
     } 
+}
+function adcionarprod(){
+    let Mproduto 
+    let Mpreco = 0
+   do{
+    Mproduto = prompt("qual o nome do novo produto?")
+    }
+    while((Mproduto === "" || !isNaN(Mproduto)));
+    
+    do{
+         Mpreco = Number(prompt("qual o valor do novo produto?"))
+    }
+    while(Mpreco <= 0)
+    produtos2.push(Mproduto)
+    precos2.push(Mpreco)
 }
