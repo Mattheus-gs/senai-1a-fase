@@ -17,10 +17,11 @@ function addpreco(){
     console.log(precos);
     document.getElementById("resultado").innerHTML = ''
     for(i=0;i<precos.length;i++){
-        document.getElementById("resultado").innerHTML += precos[i] + " - "
+        document.getElementById("resultado").innerHTML += 'R$ '+precos[i].toFixed(2).replace('.',',') + " - "
     }
     
 }
+
 function mostraprodutos(){
    
     document.getElementById("subtitulo").innerHTML = "Lista de produtos"
@@ -28,4 +29,32 @@ function mostraprodutos(){
     for(i=0;i<produtos.length;i++){
         document.getElementById("resultado").innerHTML += `<p class="mama"> ${produtos[i]} </p>`
     }
+}
+
+
+let produtos2 = ["Meia", "Pá de corte", "Suco de manga", "Leite"]
+let precos2 = [665.9999, 777, 12, 4]
+
+function verProdutosComPrecos(){
+    // console.log(produtos);
+    for(let i=0; i<produtos.length; i++){
+        let j = i + 1
+        document.getElementById('listaProdutos').innerHTML += 
+        "<p>" + 
+        j + "°: " + produtos[i] + " R$ " + 
+        precos[i].toFixed(2).replace('.', ',') 
+        + 
+        "</p>"
+    } 
+}
+
+function retirarUltN(){
+    produtos2.pop()
+    precos2.pop()
+}
+
+function aumentapreco(){
+    for(let i=0; i<precos2.length; i++){
+        precos2[i] * 3
+    } 
 }
